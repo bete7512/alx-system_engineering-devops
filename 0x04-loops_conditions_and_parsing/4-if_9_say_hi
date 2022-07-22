@@ -1,12 +1,30 @@
+
 #!/usr/bin/env bash
-#condition if more bucle
-a=1
-while [ $a -le 10 ]
+# Displays "Holberton School" 10 times using a while loop.
+#   On the 9th iteration, displays "Hi" before "Holberton School".
+
+count=0
+
+while [ $count -lt 10 ]
 do
-	echo "HBest School"
-	if [ $a == 9 ]
-	then
-		echo "Hi"
-	fi
-	((a++))
+  if [ $count -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Holberton School"
+  (( count++ ))
 done
+
+
+# #!/usr/bin/env bash
+# #condition if more bucle
+# a=1
+# while [ $a -le 10 ]
+# do
+# 	echo "HBest School"
+# 	if [ $a == 9 ]
+# 	then
+# 		echo "Hi"
+# 	fi
+# 	((a++))
+# done
