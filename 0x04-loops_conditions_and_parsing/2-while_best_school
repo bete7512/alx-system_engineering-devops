@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# script run in loop while
+i=0
+while ((i<=9))
+do
+	echo "Best School"
+	((i++))
+done
