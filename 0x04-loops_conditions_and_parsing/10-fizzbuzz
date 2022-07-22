@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
 
-count=1
-while [ "$count" -lt 101 ]
+I=1
+
+while [ $I -lt 101 ]
 do
-    if [ $((count%15)) = 0 ]
-    then
-        echo "FizzBuzz"
-    elif [ $((count%3)) = 0 ]
-    then
-        echo "Fizz"
-    elif [ $((count%5)) = 0 ]
-    then
-        echo "Buzz"
-    else
-            echo "$count"
-    fi
-((count++))
+	if [ $((I%3)) == 0 ] && [ $((I % 5)) == 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $((I%3)) == 0 ]
+	then
+		echo "Fizz"
+	elif [ $((I%5)) == 0 ]
+	then
+		echo "Buzz"
+	else
+		echo $I
+	fi
+I=$(( I+1 ))
 done
