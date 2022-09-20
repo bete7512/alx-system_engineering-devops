@@ -1,5 +1,3 @@
-# Kills a process named killmenow
-
-exec { 'pkill -f killmenow':
-  path => '/usr/bin/:/usr/local/bin/:/bin/'
-}
+#kill a killmenow
+exec { '/usr/bin/env pkill -9 killmenow':
+} 
