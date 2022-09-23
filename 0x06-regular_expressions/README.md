@@ -1,25 +1,34 @@
-0x06. Regular expression
-Regex
-DevOps
- By: Sylvain Kalache
- Weight: 1
- Project over - took place from Jul 26, 2022 6:00 AM to Jul 27, 2022 6:00 AM
- An auto review will be launched at the deadline
-In a nutshell…
-Auto QA review: 13.0/24 mandatory & 5.85/9 optional
-Altogether:  89.38%
-Mandatory: 54.17%
-Optional: 65.0%
-Calculation:  54.17% + (54.17% * 65.0%)  == 89.38%
-Concepts
-For this project, we expect you to look at this concept:
 
-Regular Expression
-Background Context
+# 0x06. Regular expression
+
+RegexDevOps
+
+-   By:  Sylvain Kalache
+-   Weight:  1
+-   Project over - took place from  Jul 26, 2022 6:00 AM  to  Jul 27, 2022 6:00 AM
+-   An auto review will be launched at the deadline
+
+#### In a nutshell…
+
+-   **Auto QA review:**  13.0/24 mandatory & 5.85/9 optional
+-   **Altogether:**  **89.38%**
+    -   Mandatory: 54.17%
+    -   Optional: 65.0%
+    -   Calculation: 54.17% + (54.17% * 65.0%) == **89.38%**
+
+### Concepts
+
+_For this project, we expect you to look at this concept:_
+
+-   [Regular Expression](https://alx-intranet.hbtn.io/concepts/29)
+
+## Background Context
+
 For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
 
-Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the //:
+Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the  `//`:
 
+```
 sylvain@ubuntu$ cat example.rb
 #!/usr/bin/env ruby
 puts ARGV[0].scan(/127.0.0.[0-9]/).join
@@ -29,37 +38,53 @@ sylvain@ubuntu$ ./example.rb 127.0.0.2
 sylvain@ubuntu$ ./example.rb 127.0.0.1
 127.0.0.1
 sylvain@ubuntu$ ./example.rb 127.0.0.a
-Resources
-Read or watch:
 
-Regular expressions - basics
-Regular expressions - advanced
-Rubular is your best friend
-Use a regular expression against a problem: now you have 2 problems
-Learn Regular Expressions with simple, interactive exercises
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be interpreted on Ubuntu 20.04 LTS
-All your files should end with a new line
-A README.md file, at the root of the folder of the project, is mandatory
-All your Bash script files must be executable
-The first line of all your Bash scripts should be exactly #!/usr/bin/env ruby
-All your regex must be built for the Oniguruma library
-Quiz questions
-Great! You've completed the quiz successfully! Keep going! (Show quiz)
-Tasks
-0. Simply matching School
+```
+
+## Resources
+
+**Read or watch**:
+
+-   [Regular expressions - basics](https://alx-intranet.hbtn.io/rltoken/6VeaVMaugIxcFAwA27TBdQ "Regular expressions - basics")
+-   [Regular expressions - advanced](https://alx-intranet.hbtn.io/rltoken/rntjh3-3S86zt0Qy28L10w "Regular expressions - advanced")
+-   [Rubular is your best friend](https://alx-intranet.hbtn.io/rltoken/RGkVuw1lZ_hoCCbLsiOAhg "Rubular is your best friend")
+-   [Use a regular expression against a problem: now you have 2 problems](https://alx-intranet.hbtn.io/rltoken/Vwm8lpMUGa4x_FBtlyUQ8g "Use a regular expression against a problem: now you have 2 problems")
+-   [Learn Regular Expressions with simple, interactive exercises](https://alx-intranet.hbtn.io/rltoken/XsQ6rzS1uy-E6bnswUqIKg "Learn Regular Expressions with simple, interactive exercises")
+
+## Requirements
+
+### General
+
+-   Allowed editors:  `vi`,  `vim`,  `emacs`
+-   All your files will be interpreted on Ubuntu 20.04 LTS
+-   All your files should end with a new line
+-   A  `README.md`  file, at the root of the folder of the project, is mandatory
+-   All your Bash script files must be executable
+-   The first line of all your Bash scripts should be exactly  `#!/usr/bin/env ruby`
+-   All your regex must be built for the Oniguruma library
+
+### Quiz questions
+
+**Great!**  You've completed the quiz successfully! Keep going!  (Show quiz)
+
+## Tasks
+
+### 0. Simply matching School
+
 mandatory
-Score: 0.00% (Checks completed: 0.00%)
 
+Score:  0.00%  (Checks completed: 0.00%)
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220923%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220923T125642Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f01818a0576d8292c1af237042c5467fa148bcac8dca4e51f4c0b3603a47d708)
 
 Requirements:
 
-The regular expression must match School
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+-   The regular expression must match  `School`
+-   Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
 Example:
 
+```
 sylvain@ubuntu$ ./0-simply_match_school.rb School | cat -e
 School$
 sylvain@ubuntu$ ./0-simply_match_school.rb "Best School" | cat -e
@@ -68,82 +93,116 @@ sylvain@ubuntu$ ./0-simply_match_school.rb "School Best School" | cat -e
 SchoolSchool$
 sylvain@ubuntu$ ./0-simply_match_school.rb "Grace Hopper" | cat -e
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 0-simply_match_school.rb
-     
-1. Repetition Token #0
+```
+
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `0-simply_match_school.rb`
+
+Done?  Help  Check your code  Ask for a new correction  Get a sandbox  QA Review
+
+### 1. Repetition Token #0
+
 mandatory
-Score: 65.00% (Checks completed: 100.00%)
 
+Score:  65.00%  (Checks completed: 100.00%)
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/e7db3c377d46453588fc84f3a975661d142fee91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220923%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220923T125643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=72b5dc33fd18db066161a55c72de4bb961d1f1216410c1093c707c8fa323e330)
 
 Requirements:
 
-Find the regular expression that will match the above cases
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
-Repo:
+-   Find the regular expression that will match the above cases
+-   Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 1-repetition_token_0.rb
-    
-2. Repetition Token #1
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `1-repetition_token_0.rb`
+
+Done!  Help  Check your code  Get a sandbox  QA Review
+
+### 2. Repetition Token #1
+
 mandatory
-Score: 65.00% (Checks completed: 100.00%)
 
+Score:  65.00%  (Checks completed: 100.00%)
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/c59ff11db195d5cf17d1790a5141ae2f234786d2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220923%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220923T125643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a9cacc119781958ffbcd9c52632d77899552eae1dfffc40849cf0128dae78c8c)
 
 Requirements:
 
-Find the regular expression that will match the above cases
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
-Repo:
+-   Find the regular expression that will match the above cases
+-   Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 2-repetition_token_1.rb
-    
-3. Repetition Token #2
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `2-repetition_token_1.rb`
+
+Done!  Help  Check your code  Get a sandbox  QA Review
+
+### 3. Repetition Token #2
+
 mandatory
-Score: 65.00% (Checks completed: 100.00%)
 
+Score:  65.00%  (Checks completed: 100.00%)
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3b6bf4aeca6a0c2de584e7f5d68d11eef57ce205.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220923%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220923T125643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=50b6ac390d3fdcfe83666ce8116a65d37c8b971cc0d083d9f326b53b16984e54)
 
 Requirements:
 
-Find the regular expression that will match the above cases
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
-Repo:
+-   Find the regular expression that will match the above cases
+-   Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 3-repetition_token_2.rb
-    
-4. Repetition Token #3
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `3-repetition_token_2.rb`
+
+Done!  Help  Check your code  Get a sandbox  QA Review
+
+### 4. Repetition Token #3
+
 mandatory
-Score: 65.00% (Checks completed: 100.00%)
 
+Score:  65.00%  (Checks completed: 100.00%)
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f8dbcb9cf5ae569a8645027dc46e81cb372ce28e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220923%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220923T125643Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=945317cc1be4fd499cb08ee51a5471b55e7103ccdcefd613afbd0d8f3b2748db)
 
 Requirements:
 
-Find the regular expression that will match the above cases
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
-Your regex should not contain square brackets
-Repo:
+-   Find the regular expression that will match the above cases
+-   Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+-   Your regex should not contain square brackets
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 4-repetition_token_3.rb
-    
-5. Not quite HBTN yet
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `4-repetition_token_3.rb`
+
+Done!  Help  Check your code  Get a sandbox  QA Review
+
+### 5. Not quite HBTN yet
+
 mandatory
-Score: 65.00% (Checks completed: 100.00%)
+
+Score:  65.00%  (Checks completed: 100.00%)
+
 Requirements:
 
-The regular expression must be exactly matching a string that starts with h ends with n and can have any single character in between
-Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+-   The regular expression must be exactly matching a string that starts with  `h`  ends with  `n`  and can have any single character in between
+-   Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
 Example:
 
+```
 sylvain@ubuntu$ ./5-beginning_and_end.rb 'hn' | cat -e
 $
 sylvain@ubuntu$ ./5-beginning_and_end.rb 'hbn' | cat -e
@@ -154,22 +213,32 @@ sylvain@ubuntu$ ./5-beginning_and_end.rb 'h8n' | cat -e
 h8n$
 sylvain@ubuntu$
 $
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 5-beginning_and_end.rb
-    
-6. Call me maybe
+```
+
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `5-beginning_and_end.rb`
+
+Done!  Help  Check your code  Get a sandbox  QA Review
+
+### 6. Call me maybe
+
 mandatory
-Score: 65.00% (Checks completed: 100.00%)
-This task is brought to you by a professional advisor Neha Jain, Senior Software Engineer at LinkedIn.
+
+Score:  65.00%  (Checks completed: 100.00%)
+
+This task is brought to you by a professional advisor  [Neha Jain](https://alx-intranet.hbtn.io/rltoken/GqwvXAvTXR_JXqyTvZ4AzQ "Neha Jain"), Senior Software Engineer at LinkedIn.
 
 Requirement:
 
-The regular expression must match a 10 digit phone number
+-   The regular expression must match a 10 digit phone number
+
 Example:
 
+```
 sylvain@ubuntu$ ./6-phone_number.rb 4155049898 | cat -e
 4155049898$
 sylvain@ubuntu$ ./6-phone_number.rb " 4155049898" | cat -e
@@ -179,22 +248,32 @@ $
 sylvain@ubuntu$ ./6-phone_number.rb "415-504-9898" | cat -e
 $
 sylvain@ubuntu$
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 6-phone_number.rb
-    
-7. OMG WHY ARE YOU SHOUTING?
+```
+
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `6-phone_number.rb`
+
+Done!  Help  Check your code  Get a sandbox  QA Review
+
+### 7. OMG WHY ARE YOU SHOUTING?
+
 mandatory
-Score: 65.00% (Checks completed: 100.00%)
 
+Score:  65.00%  (Checks completed: 100.00%)
+
+![](https://alx-intranet.hbtn.io/images/contents/sysadmin/projects/78/shouting.jpg)
 
 Requirement:
 
-The regular expression must be only matching: capital letters
+-   The regular expression must be only matching: capital letters
+
 Example:
 
+```
 sylvain@ubuntu$ ./7-OMG_WHY_ARE_YOU_SHOUTING.rb "I realLy hOpe VancouvEr posseSs Yummy Soft vAnilla Dupper Mint Ice Nutella cream" | cat -e
 ILOVESYSADMIN$
 sylvain@ubuntu$ ./7-OMG_WHY_ARE_YOU_SHOUTING.rb "WHAT do you SAY?" | cat -e
@@ -202,29 +281,39 @@ WHATSAY$
 sylvain@ubuntu$ ./7-OMG_WHY_ARE_YOU_SHOUTING.rb "cannot read you" | cat -e
 $
 sylvain@ubuntu$
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 7-OMG_WHY_ARE_YOU_SHOUTING.rb
-    
-8. Textme
+```
+
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `7-OMG_WHY_ARE_YOU_SHOUTING.rb`
+
+Done!  Help  Check your code  Get a sandbox  QA Review
+
+### 8. Textme
+
 #advanced
-Score: 65.00% (Checks completed: 100.00%)
-This exercise was prepared for you by Guillaume Plessis, VP of Infrastructure at TextMe. It is something he uses daily. You can thank Guillaume for his project on Twitter.
+
+Score:  65.00%  (Checks completed: 100.00%)
+
+This exercise was prepared for you by  [Guillaume Plessis](https://alx-intranet.hbtn.io/rltoken/2Rwwb9pSGKXSp3b3BcqkAw "Guillaume Plessis"), VP of Infrastructure at TextMe. It is something he uses daily. You can thank Guillaume for his project  [on Twitter](https://alx-intranet.hbtn.io/rltoken/Vz-iLl3_Of797s9TsjCxJQ "on Twitter").
 
 For this task, you’ll be taking over Guillaume’s responsibilities: one afternoon, a TextMe VoIP Engineer comes to you and explains she wants to run some statistics on the TextMe app text messages transactions.
 
 Requirements:
 
-Your script should output: [SENDER],[RECEIVER],[FLAGS]
-The sender phone number or name (including country code if present)
-The receiver phone number or name (including country code if present)
-The flags that were used
-You can find a [log file here].
+-   Your script should output:  `[SENDER],[RECEIVER],[FLAGS]`
+    -   The sender phone number or name (including country code if present)
+    -   The receiver phone number or name (including country code if present)
+    -   The flags that were used
+
+You can find a  [[log file here]](http://intranet-projects-files.s3.amazonaws.com/holbertonschool-sysadmin_devops/78/text_messages.log).
 
 Example:
 
+```
 $ ./100-textme.rb 'Feb 1 11:00:00 ip-10-0-0-11 mdr: 2016-02-01 11:00:00 Receive SMS [SMSC:SYBASE1] [SVC:] [ACT:] [BINF:] [FID:] [from:Google] [to:+16474951758] [flags:-1:0:-1:0:-1] [msg:127:This planet has - or rather had - a problem, which was this: most of the people on it were unhappy for pretty much of the time.] [udh:0:]'
 Google,+16474951758,-1:0:-1:0:-1
 $
@@ -240,8 +329,11 @@ $ ./100-textme.rb 'Feb 1 11:00:00 ip-10-0-64-11 mdr: 2016-02-01 11:00:00 Sent SM
 12392190384,19148265919,-1:0:-1:-1:-1
 $
 
-Repo:
 
-GitHub repository: alx-system_engineering-devops
-Directory: 0x06-regular_expressions
-File: 100-textme.rb
+```
+
+**Repo:**
+
+-   GitHub repository:  `alx-system_engineering-devops`
+-   Directory:  `0x06-regular_expressions`
+-   File:  `100-textme.rb`
