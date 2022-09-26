@@ -2,7 +2,6 @@
 # script that install lb named haproxy
 apt-get update
 apt-get -y install haproxy
-
 echo "ENABLED=1" >> /etc/default/haproxy
-sed -i '/504.http/a \\nlisten http-in\n\tbind *:80\n\tmode http\n\tbalance roundrobin\n\tserver 602-web-01 34.75.83.34:80 check\n\tserver 602-web-02 3.81.29.69:80 check' /etc/haproxy/haproxy.cfg
+sed -i '/504.http/a \\nlisten http-in\n\tbind *:80\n\tmode http\n\tbalance roundrobin\n\tserver 16025-web-01 3.234.240.85 check\n\tserver 16025-web-02 3.236.99.35:80 check' /etc/haproxy/haproxy.cfg
 sudo service haproxy start
