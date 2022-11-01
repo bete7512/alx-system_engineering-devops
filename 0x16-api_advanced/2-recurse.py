@@ -18,7 +18,8 @@ def recurse(subreddit, hot_list=[]):
     else:
         count = count +1
     if count < max_count:
-        hot_list.append(result['data']['children'][count])
+        hot_list.append(result[count])
+        recurse(subreddit,hot_list)
     return hot_list
 
     
