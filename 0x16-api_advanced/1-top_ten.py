@@ -11,9 +11,11 @@ def top_ten(subreddit):
         return None
     else:
         result = response.json()['data']['children']
-        if res
-        values = []
-        for i in 10:
-          values =   [title for title in result[i] if i < 10]
+        if not result:
+            return None
+        # values = []
+        # for i in 10:
+        #   values =   [title for title in result[i] if i < 10]
+        print()
         print(values)
         return 
