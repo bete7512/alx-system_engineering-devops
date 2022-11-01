@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """"advanced api oth tasks"""
+from unittest import result
 import requests
 
 
@@ -10,5 +11,5 @@ def number_of_subscribers(subreddit):
     if not response.status_code == 404:
         return 0
     else:
-        
-        return response.json()
+        result = response.json().get('data').get('subscriber')
+        return 
