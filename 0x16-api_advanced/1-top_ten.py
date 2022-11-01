@@ -9,14 +9,16 @@ def top_ten(subreddit):
     url = 'https://www.reddit.com/r/{}.json'.format(subreddit)
     response = requests.get(url, headers=headers)
     if response.status_code == 404:
-        return None
+        print("None")
+        return
     else:
         result = response.json()['data']['children']
         if not result:
-            return None
+            print("None")
+            return
         values = []
         for title in result:
             if len(values) > 10:
                 break
             values.append(title['data'].get('title'))
-        print(*values,sep='\n')
+        print(*values, sep='\n')
