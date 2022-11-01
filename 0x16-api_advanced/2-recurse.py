@@ -8,6 +8,7 @@ def recurse(subreddit, hot_list=[]):
     headers = {'User-Agent': 'Linux/client/0.0'}
     url = 'https://www.reddit.com/r/{}.json'.format(subreddit)
     response = requests.get(url, headers=headers)
-    data_list = response['data']['children']
+    count = 0
+    data_list = response['data']['children'][count]
 
     
