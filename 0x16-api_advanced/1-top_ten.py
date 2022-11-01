@@ -12,13 +12,12 @@ def top_ten(subreddit):
         return None
     else:
         result = response.json()['data']['children']
-        if result:
+        if not result:
             return None
         values = []
         for title in result:
             if len(values) > 10:
-                print('ghghv')
                 break
             values.append(title['data'].get('title'))
             print('ghghv')
-        print(*values, sep=',')
+        print(*values)
