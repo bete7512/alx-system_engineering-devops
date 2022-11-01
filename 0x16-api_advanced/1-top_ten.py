@@ -17,6 +17,8 @@ def top_ten(subreddit):
         values = []
         for title in result:
             if len(values) > 10:
+                print('ghghv')
                 break
             values.append(title['data'].get('title'))
-        print(*values,sep='\n')
+            print('ghghv')
+        print(*values, sep=',')
