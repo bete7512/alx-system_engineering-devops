@@ -13,6 +13,8 @@ def recurse(subreddit, hot_list=[]):
     result = response.json()['data']['children']
     max_count = len(result)
     count = len(hot_list)
+    if len(hot_list) >= max_count:
+        return
     if len(hot_list) == 0:
         count = 0
     else:
