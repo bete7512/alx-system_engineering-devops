@@ -10,4 +10,4 @@ if __name__ == '__main__':
         print("Please pass an argument for the subreddit to search.")
     else:
         response = number_of_subscribers(sys.argv[1])
-        print(response)
+        print(response.json())
