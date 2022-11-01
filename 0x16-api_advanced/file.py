@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 def search_str(file_path, word):
     with open(file_path, 'r') as file:
