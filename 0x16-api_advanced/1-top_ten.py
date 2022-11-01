@@ -15,9 +15,8 @@ def top_ten(subreddit):
             return None
         values = []
         for title in result:
-            
-            values[i] = result[i]['data'].get('title')
-        #   values =   [title for title in result[i] if i < 10]
-        # print(result[0]['data'].get('title'))
+            if len(values) > 10:
+                break
+            values.append(title['data'].get('title'))
         print(values)
         return values
