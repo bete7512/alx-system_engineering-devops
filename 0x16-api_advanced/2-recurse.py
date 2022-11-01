@@ -10,5 +10,6 @@ def recurse(subreddit, hot_list=[]):
     response = requests.get(url, headers=headers)
     count = 0
     data_list = response['data']['children'][count]
+    count++
 
     
