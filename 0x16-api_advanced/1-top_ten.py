@@ -6,7 +6,7 @@ import requests
 def top_ten(subreddit):
     """"Alx verification of editing tools"""
     headers = {'User-Agent': 'Linux/client/0.0'}
-    url = 'https://www.reddit.com/r/{}.json'.format(subreddit)
+    url = 'https://www.reddit.com/r/{}/hot/.json'.format(subreddit)
     response = requests.get(url, headers=headers)
     if response.status_code == 404:
         print("None")
