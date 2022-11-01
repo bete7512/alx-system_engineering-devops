@@ -11,11 +11,11 @@ def recurse(subreddit, hot_list=[]):
     if response.status_code == 404:
         return None
     result = response.json()['data']['children']
-    count = 0
-    data_list = []
-    print(result[count])
-    data_list.append(result['data']['children'][count])
+    max_count = len(result)
+    count = len(hot_list)
+    
+    hot_list.append(result['data']['children'][count])
     count = count + 1
-    return data_list
+    return hot_list
 
     
