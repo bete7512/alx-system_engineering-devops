@@ -13,8 +13,8 @@ def recurse(subreddit, hot_list=[]):
     result = response.json()['data']['children']
     count = 0
     data_list = []
-    print(result['kind'])
-    # print(result.get('data').get('children')[count])
+    # print(result[0][])
+    print(result[0]['data']['children'][count])
     # data_list.append(result['data']['children'][count])
     count = count + 1
     # return data_list
