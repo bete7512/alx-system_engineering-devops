@@ -16,6 +16,6 @@ def top_ten(subreddit):
         # values = []
         # for i in 10:
         #   values =   [title for title in result[i] if i < 10]
-        print()
-        print(values)
+        print(result[0]['data'])
+        # print(values)
         return 
