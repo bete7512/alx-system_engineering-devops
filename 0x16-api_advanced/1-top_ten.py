@@ -14,9 +14,10 @@ def top_ten(subreddit):
         if not result:
             return None
         values = []
-        for i in 10:
+        for title in result:
+            
             values[i] = result[i]['data'].get('title')
         #   values =   [title for title in result[i] if i < 10]
         # print(result[0]['data'].get('title'))
         print(values)
-        return 
+        return values
