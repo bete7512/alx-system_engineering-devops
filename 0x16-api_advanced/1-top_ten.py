@@ -12,7 +12,7 @@ def top_ten(subreddit):
         return None
     else:
         result = response.json()['data']['children']
-        if not result:
+        if result:
             return None
         values = []
         for title in result:
