@@ -19,5 +19,4 @@ def top_ten(subreddit):
             if len(values) > 10:
                 break
             values.append(title['data'].get('title'))
-        print(values)
-        return values
+        [print(title for title in values)]
