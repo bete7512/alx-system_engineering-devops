@@ -14,6 +14,7 @@ def recurse(subreddit, hot_list=[]):
     data_list = []
     data_list.append(response['data']['children'][count])
     count = count + 1
-    return data_list
+    # return data_list
+    return ['sdvsv','svdsdv']
 
     
