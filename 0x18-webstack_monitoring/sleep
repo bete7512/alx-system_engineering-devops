@@ -1,2 +1,0 @@
-#!/bin/bash
-while true; do ./autogit; sleep 100; done
