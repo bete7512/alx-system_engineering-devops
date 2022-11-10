@@ -116,7 +116,7 @@ Ready for a  manual review
 
 
 # Curl command
-DD_API_KEY
+DD_API_KEY=09cf13271886e76ac88510832a38a768,DD_APP_KEY=ee6429bda8ce83f6f4e3627666a19a520b51b6ee
 curl -X GET "https://api.datadoghq.com/api/v1/3.234.240.85" \
 -H "Accept: application/json" \
 -H "DD-API-KEY: ${DD_API_KEY}" \
